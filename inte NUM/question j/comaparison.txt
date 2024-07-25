@@ -1,0 +1,12 @@
+Power Iteration Method:
+
+It is designed to find the largest eigenvalue and its corresponding eigenvector.
+It may not be able to find all eigenvalues and eigenvectors but is simple and efficient for finding the dominant eigenvalue.
+QR Algorithm:
+
+It provides all the eigenvalues and eigenvectors of the matrix.
+It is more computationally intensive compared to the Power Iteration method but more comprehensive.
+Differences:
+
+Eigenvalues: The largest eigenvalue obtained from the Power Iteration method should match the largest eigenvalue from the QR Algorithm.
+Eigenvectors: The corresponding eigenvector from the Power Iteration method should be close to the corresponding eigenvector from the QR Algorithm, though signs or scaling may differ due to normalization differences.

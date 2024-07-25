@@ -1,0 +1,24 @@
+3. Algorithm Analysis
+Let's compare the interpolating polynomials obtained from Lagrange and Newton's methods.
+
+Lagrange Polynomial:
+The Lagrange polynomial is constructed as a sum of basis polynomials, each constructed to be zero at all given x-values except one. This approach has a few properties:
+
+Global Nature: Every term depends on all the data points, so changing one data point affects the whole polynomial.
+Complexity: Constructing the Lagrange polynomial requires evaluating all basis polynomials for each point, which can be computationally intensive.
+Newton's Divided Difference Polynomial:
+Newton's polynomial is constructed incrementally, which gives it some different properties:
+
+Local Nature: Each new term depends only on a subset of the data points, making it more robust to changes in the data set.
+Efficiency: The divided difference table can be computed more efficiently than the Lagrange polynomial, especially when adding new data points.
+Comparison:
+Both methods produce the same interpolating polynomial for a given set of data points, but the methods of construction and their properties differ:
+
+Lagrange Polynomial:
+
+Simpler conceptual understanding.
+Less efficient for large data sets due to its global nature.
+Newton's Polynomial:
+
+More efficient, especially for adding new points.
+More complex to implement due to the divided difference table.
